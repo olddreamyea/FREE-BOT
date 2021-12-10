@@ -12,6 +12,8 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.new(0.101961, 0.101961, 0.101961)
 Frame.Position = UDim2.new(0.152173907, 0, 0.355414033, 0)
 Frame.Size = UDim2.new(0, 508, 0, 306)
+Frame.Active = true
+Frame.Draggable = true
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -38,6 +40,26 @@ TextButton.TextSize = 14
 TextButton.TextWrapped = true
 TextButton.MouseButton1Click:connect(function()
 	if TextBox.Text == ".Bot" then
+
+        Player=game:GetService("Players").LocalPlayer
+Character=Player.Character
+PlayerGui=Player.PlayerGui
+Backpack=Player.Backpack
+Torso=Character.Torso
+Head=Character.Head
+Humanoid=Character.Humanoid
+LeftArm=Character["Left Arm"]
+LeftLeg=Character["Left Leg"]
+Torso=Character["Torso"]
+RightArm=Character["Right Arm"]
+RightLeg=Character["Right Leg"]
+
+LeftArm.Transparency = "1"
+LeftLeg.Transparency = "1"
+RightArm.Transparency = "1"
+RightLeg.Transparency = "1"
+Torso.Transparency = "1"
+Head.Transparency = "1"
 
 		local fling = true
 		local flinge = true
@@ -295,9 +317,8 @@ TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14
 TextButton_2.TextWrapped = true
 TextButton_2.MouseButton1Click:connect(function()
-print("Typical. And ! Emplic")
+	print("Credit goes to typical")
 end)
-
 TextBox.Parent = Frame
 TextBox.BackgroundColor3 = Color3.new(0.0509804, 0.0509804, 0.0509804)
 TextBox.Position = UDim2.new(0.0306035131, 0, 0.178993374, 0)
