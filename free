@@ -39,7 +39,7 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14
 TextButton.TextWrapped = true
 TextButton.MouseButton1Click:connect(function()
-	if TextBox.Text == ".Bot" then
+	if TextBox.Text == "Bot" then
 
         Player=game:GetService("Players").LocalPlayer
 Character=Player.Character
@@ -283,24 +283,24 @@ Head.Transparency = "1"
 
 
 
-	if TextBox.Text == ".KitchenGun" then
+	if TextBox.Text == "KitchenGun" then
 		loadstring(game:HttpGet(('https://pastebin.com/raw/U9fjWxuK'),true))()
 
 	end
 
 
 
-	if TextBox.Text == ".Nept" then
+	if TextBox.Text == "Nept" then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/neptunian.lua"))()
 
 	end
 
-	if TextBox.Text == ".Sonic" then
+	if TextBox.Text == "Sonic" then
 		loadstring(game:HttpGet("https://pastebin.com/raw/CW5dKVtr"))()
 
 	end
 
-	if TextBox.Text == ".DualSword" then
+	if TextBox.Text == "DualSword" then
 		loadstring(game:HttpGet("https://pastebin.com/raw/EsC5mLGG"))()
 
 	end
