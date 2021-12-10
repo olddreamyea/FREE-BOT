@@ -295,7 +295,7 @@ TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14
 TextButton_2.TextWrapped = true
 TextButton_2.MouseButton1Click:connect(function()
-print("Typical. And ! Emplic"
+print("Typical. And ! Emplic")
 end)
 
 TextBox.Parent = Frame
