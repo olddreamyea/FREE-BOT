@@ -625,10 +625,6 @@ if HighlightFlingBlock ~= false then
     Highlight.Name = "HighlightBox"
 end
 
-char['Left Arm']:Destroy()
-		char['Right Arm']:Destroy()
-		char['Left Leg']:Destroy()
-		char['Right Leg']:Destroy()
 
 HumanDied = false
 for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
@@ -767,6 +763,12 @@ rmesh('Hat1')
 
 plr.Character = bot
 workspace.CurrentCamera.CameraSubject = bot
+
+char['Left Arm']:Destroy()
+		char['Right Arm']:Destroy()
+		char['Left Leg']:Destroy()
+		char['Right Leg']:Destroy()
+
 
 local m = plr:GetMouse()
 if flinge then
