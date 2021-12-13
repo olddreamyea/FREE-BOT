@@ -555,7 +555,6 @@ local flinge = true
 
 
 HumanDied = false
-
 for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
 if v:IsA("BasePart") then 
 game:GetService("RunService").Heartbeat:connect(function()
@@ -565,6 +564,7 @@ sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",1.0000000331814e+3
 end)
 end
 end
+
 
 Player=game:GetService("Players").LocalPlayer
 Character=Player.Character
@@ -802,7 +802,7 @@ bot.Animate.Disabled = false
 
 	end
 	
-		if TextBox.Text == "SemiBot"
+		if TextBox.Text == "SemiBot" then
 		
 		local fling = true
 		local flinge = true
@@ -1055,7 +1055,7 @@ v:Stop()
 bot.Animate:Remove()
 end
 
-" then
+
 		local fling = true
 		local flinge = true
 
