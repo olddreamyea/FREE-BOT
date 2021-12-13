@@ -100,7 +100,7 @@ end
 		char.Archivable = true
 
 		local bot = char:Clone()
-		bot.Name = 'NexoBot'
+		bot.Name = 'wtfiswrongwithyallt'
 		bot.Parent = workspace
 
 		function pos(part, parent, p)
@@ -286,97 +286,12 @@ end
 	
 
 
-if TextBox.Text == "LongBot" then
+if TextBox.Text == "SemiBot" then
 		
-local c = game.Players.LocalPlayer.Character:FindFirstChild("RockAccessory").Handle
-c.AccessoryWeld:Destroy()
-c.Anchored = false
-local cRot = 0
-game:GetService("RunService").RenderStepped:Connect(function(dt)
-    cRot = cRot + 0*dt
-    c.Anchored = true
-    c.CFrame = game.Players.LocalPlayer.Character:FindFirstChild("Right Arm").CFrame * CFrame.new(0,-1,0) * CFrame.Angles(math.rad(0), 0, -cRot)
-    c.Velocity = Vector3.new(0,0,0)
-    c.Anchored = false
-end)
+local fling = true
+local flinggo = true
+local flingclick = true
 
-local c = game.Players.LocalPlayer.Character:FindFirstChild("fff_fox").Handle
-c.AccessoryWeld:Destroy()
-c.Anchored = false
-local cRot = 0
-game:GetService("RunService").RenderStepped:Connect(function(dt)
-    cRot = cRot + 0*dt
-    c.Anchored = true
-    c.CFrame = game.Players.LocalPlayer.Character:FindFirstChild("Left Arm").CFrame * CFrame.new(0,-1,0) * CFrame.Angles(math.rad(0), 0, -cRot)
-    c.Velocity = Vector3.new(0,0,0)
-    c.Anchored = false
-end)
-
-local c = game.Players.LocalPlayer.Character:FindFirstChild("Sniper").Handle
-c.AccessoryWeld:Destroy()
-c.Anchored = false
-local cRot = 0
-game:GetService("RunService").RenderStepped:Connect(function(dt)
-    cRot = cRot + 0*dt
-    c.Anchored = true
-    c.CFrame = game.Players.LocalPlayer.Character:FindFirstChild("Left Leg").CFrame * CFrame.new(0,-1,0) * CFrame.Angles(math.rad(0), 0, -cRot)
-    c.Velocity = Vector3.new(0,0,0)
-    c.Anchored = false
-end)
-
-
-local c = game.Players.LocalPlayer.Character:FindFirstChild("TwitterBird").Handle
-c.AccessoryWeld:Destroy()
-c.Anchored = false
-local cRot = 0
-game:GetService("RunService").RenderStepped:Connect(function(dt)
-    cRot = cRot + 0*dt
-    c.Anchored = true
-    c.CFrame = game.Players.LocalPlayer.Character:FindFirstChild("Right Leg").CFrame * CFrame.new(0,-1,0) * CFrame.Angles(math.rad(0), 0, -cRot)
-    c.Velocity = Vector3.new(0,0,0)
-    c.Anchored = false
-end)
-
-local HighlightFlingBlock = true --// Recommended: true
-local FlingHighlightColor = Color3.fromRGB(2,1,1)
-
-bullet = game.Players.LocalPlayer.Character["HumanoidRootPart"]
-
-if HighlightFlingBlock ~= false then
-    local Highlight = Instance.new("SelectionBox")
-    Highlight.Adornee = bullet
-    Highlight.Color3 = (typeof(FlingHighlightColor)=="Color3" and FlingHighlightColor) or (Color3.fromRGB(213, 115, 61))
-    Highlight.Parent = bullet
-    Highlight.Name = "HighlightBox"
-end
-
-Player=game:GetService("Players").LocalPlayer
-Character=Player.Character
-PlayerGui=Player.PlayerGui
-Backpack=Player.Backpack
-Torso=Character.Torso
-Head=Character.Head
-Humanoid=Character.Humanoid
-LeftArm=Character["Left Arm"]
-LeftLeg=Character["Left Leg"]
-Torso=Character["Torso"]
-RightArm=Character["Right Arm"]
-RightLeg=Character["Right Leg"]
-
-LeftArm.Transparency = "1"
-LeftLeg.Transparency = "1"
-RightArm.Transparency = "1"
-RightLeg.Transparency = "1"
-Torso.Transparency = "1"
-Head.Transparency = "1"
-
-
-local fling = false
-local flinge = true
-
-
-
-HumanDied = false
 
 for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
 if v:IsA("BasePart") then 
@@ -388,6 +303,8 @@ end)
 end
 end
 
+
+
 local plr = game.Players.LocalPlayer
 local char = game.Players.LocalPlayer.Character
 local ct = {}
@@ -397,8 +314,37 @@ local m = plr:GetMouse()
 char.Archivable = true
 
 local bot = char:Clone()
-bot.Name = 'xddddd'
+bot.Name = 'shutupubitch'
 bot.Parent = workspace
+
+
+local CountSCIFIMOVIELOL = 1
+function SCIFIMOVIELOL(Part0,Part1,Position,Angle)
+	local AlignPos = Instance.new('AlignPosition', Part1); AlignPos.Name = "AliP_"..CountSCIFIMOVIELOL
+	AlignPos.ApplyAtCenterOfMass = true;
+	AlignPos.MaxForce = 5772000--67752;
+	AlignPos.MaxVelocity = math.huge/9e110;
+	AlignPos.ReactionForceEnabled = false;
+	AlignPos.Responsiveness = 200;
+	AlignPos.RigidityEnabled = false;
+	local AlignOri = Instance.new('AlignOrientation', Part1); AlignOri.Name = "AliO_"..CountSCIFIMOVIELOL
+	AlignOri.MaxAngularVelocity = math.huge/9e110;
+	AlignOri.MaxTorque = 5772000
+	AlignOri.PrimaryAxisOnly = false;
+	AlignOri.ReactionTorqueEnabled = false;
+	AlignOri.Responsiveness = 200;
+	AlignOri.RigidityEnabled = false;
+	local AttachmentA=Instance.new('Attachment',Part1); AttachmentA.Name = "Ath_"..CountSCIFIMOVIELOL
+	local AttachmentB=Instance.new('Attachment',Part0); AttachmentB.Name = "Ath_"..CountSCIFIMOVIELOL
+	AttachmentA.Orientation = Angle or Vector3.new(0,0,0)
+	AttachmentA.Position = Position or Vector3.new(0,0,0)
+	AlignPos.Attachment1 = AttachmentA;
+	AlignPos.Attachment0 = AttachmentB;
+	AlignOri.Attachment1 = AttachmentA;
+	AlignOri.Attachment0 = AttachmentB;
+	CountSCIFIMOVIELOL = CountSCIFIMOVIELOL + 1
+	return {AlignPos,AlignOri,AttachmentA,AttachmentB}
+end
 
 function pos(part, parent, p)
 Instance.new("Attachment",part)
@@ -409,7 +355,7 @@ parent.Attachment.Name = part.Name
 part.AlignPosition.Attachment0 = part[part.Name]
 part.AlignPosition.Attachment1 = parent[part.Name]
 parent[part.Name].Position = p or Vector3.new()
-part.AlignPosition.MaxForce = 999999999*10
+part.AlignPosition.MaxForce = 5000000*10
 part.AlignPosition.MaxVelocity = math.huge
 part.AlignPosition.ReactionForceEnabled = false
 part.AlignPosition.Responsiveness = math.huge
@@ -445,14 +391,10 @@ create(v.Handle,bot:FindFirstChild(v.Name).Handle)
 end
 end
 
-
-
 local hats = {
-LA = bot['Pink Hair'].Handle,
-RA = bot['Kate Hair'].Handle,
-LL = bot['Pal Hair'].Handle,
-RL = bot['LavanderHair'].Handle,
-T = bot['SeeMonkey'].Handle,
+
+T1 = bot['LavanderHair'].Handle,
+T2 = bot['Hat1'].Handle,
 }
 
 for i,v in next, hats do
@@ -460,12 +402,19 @@ v.AccessoryWeld.C1 = CFrame.new(0,0,0)*CFrame.Angles(math.rad(90),math.rad(0),ma
 v.AccessoryWeld.C0 = CFrame.new(0,0,0)*CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
 end
 
-hats.LA.AccessoryWeld.Part1 = bot['Left Arm']
-hats.RA.AccessoryWeld.Part1 = bot['Right Arm']
-hats.RL.AccessoryWeld.Part1 = bot['Right Leg']
-hats.LL.AccessoryWeld.Part1 = bot['Left Leg']
-hats.T.AccessoryWeld.Part1 = bot['Torso']
 
+hats.T1.AccessoryWeld.Part1 = bot['Torso']
+hats.T2.AccessoryWeld.Part1 = bot['Torso']
+hats.T1.AccessoryWeld.C1 = CFrame.new(0.5,0,0)*CFrame.Angles(math.rad(90),math.rad(0),math.rad(0))
+hats.T2.AccessoryWeld.C1 = CFrame.new(-0.5,0,0)*CFrame.Angles(math.rad(90),math.rad(0),math.rad(90))
+
+
+
+for i,v in pairs(bot:GetDescendants()) do
+if v:IsA('BasePart') or v:IsA('Decal') then
+v.Transparency = 1
+end
+end
 
 for i,v in next, char:GetDescendants() do
 if v:IsA('BasePart') then
@@ -475,19 +424,21 @@ end))
 end
 end
 
-
-
-char['Left Arm']:Destroy()
-char['Right Arm']:Destroy()
-char['Left Leg']:Destroy()
-char['Right Leg']:Destroy()
-
-for i,v in pairs(bot:GetDescendants()) do
-if v:IsA('BasePart') or v:IsA('Decal') then
-v.Transparency = 1
+for i,v in next, bot:GetDescendants() do
+if v:IsA('BasePart') then
+te(ct,srv.Stepped:Connect(function()
+v.CanCollide = false
+end))
 end
 end
 
+for i,v in next, bot:GetDescendants() do
+if v:IsA('BasePart') then
+te(ct,srv.RenderStepped:Connect(function()
+v.CanCollide = false
+end))
+end
+end
 
 function rmesh(HatName)
 for _,mesh in next, char[HatName]:GetDescendants() do
@@ -497,59 +448,41 @@ end
 end
 end
 
-rmesh('TwitterBird')
 
-rmesh('fff_fox')
-rmesh('Sniper')
-rmesh('RockAccessory')
 rmesh('LavanderHair')
-rmesh('Pal Hair')
-rmesh('Pink Hair')
-rmesh('Kate Hair')
-rmesh('SeeMonkey')
+rmesh('Hat1')
+
+--char.HumanoidRootPart:Destroy()
+pos(char.HumanoidRootPart,bot['Torso'])
+fling = Instance.new('BodyThrust')
+fling.Parent = char.Torso
+fling.Force = Vector3.new(3000,0,30000)
+fling.Location = char.Torso.Position
+
+
+plr.Character["Torso"]["Right Shoulder"]:Remove()
+plr.Character["Torso"]["Left Shoulder"]:Remove()
+plr.Character["Torso"]["Right Hip"]:Remove()
+plr.Character["Torso"]["Left Hip"]:Remove()
+
+SCIFIMOVIELOL(plr.Character["Left Arm"],bot["Left Arm"])
+SCIFIMOVIELOL(plr.Character["Right Arm"],bot["Right Arm"])
+SCIFIMOVIELOL(plr.Character["Left Leg"],bot["Left Leg"])
+SCIFIMOVIELOL(plr.Character["Right Leg"],bot["Right Leg"])
 
 plr.Character = bot
-workspace.CurrentCamera.CameraSubject = bot
+workspace.CurrentCamera.CameraSubject = bot.Humanoid
 
 local m = plr:GetMouse()
-if flinge then
-flingo=true
-flingclick=true
-if flingclick then
+
+flinggo=false
 te(ct,m.Button1Down:Connect(function()
-flingo=true
+flinggo=true
 end))
 
 te(ct,m.Button1Up:Connect(function()
-flingo=false
+flinggo=false
 end))
-end
-
-te(ct,srv.RenderStepped:Connect(function()
-if flingo then
-bot.Fling.CFrame = CFrame.new(m.Hit.p)*CFrame.new(0,0,0)
-elseif not flingo then
-bot.Fling.CFrame = bot['Torso'].CFrame*CFrame.new(0,0,0)
-end
-end))
-
-gobr=Instance.new('Part',bot)
-gobr.Size = Vector3.new(1,1,1)
-gobr.CFrame = bot.Torso.CFrame
-gobr.CanCollide = false
-gobr.Transparency = 1
-gobr.Anchored = true
-gobr.Name = 'Fling'
-
-pos(char.HumanoidRootPart,gobr)
-fling = Instance.new('BodyAngularVelocity')
-fling.Parent = char.HumanoidRootPart
-fling.AngularVelocity = Vector3.new(1000*10,0,1000*10)
-fling.MaxTorque = Vector3.new(5000*10,0,5000*10)
-
-else
-char.Torso.Anchored = false
-end
 
 te(ct,bot.Humanoid.Died:Connect(function()
 for i,v in next, ct do v:Disconnect() end
@@ -558,7 +491,6 @@ char:BreakJoints()
 coroutine.wrap(function()
 while true do
 srv.RenderStepped:wait()
-HumanDied = true
 if workspace:FindFirstChild(bot.Name) then
 bot:Destroy()
 else
@@ -568,27 +500,13 @@ end
 end)()
 end))
 
-
-bot.Animate.Disabled = false
-
-
-Float_Height = "0.5" -- Your float height | 5 is default
- 
-local i=1
-G=game;
-_=wait;
-p=G:GetService("Players").LocalPlayer.Character
-p:FindFirstChild("Humanoid").HipHeight = Float_Height
-
-t=.0
-n=0
-for i=1,i do
-repeat p:FindFirstChild("Humanoid").HipHeight=Float_Height-n _(t)p:FindFirstChild("Humanoid").HipHeight=Float_Height+n _(t) until
-p:FindFirstChild("Humanoid").Health == 0
+--char.Torso.Anchored = true
+for i,v in next, bot.Humanoid:GetPlayingAnimationTracks() do
+v:Stop()
+bot.Animate:Remove()
 end
 
 
-	end
 	
 	
 
