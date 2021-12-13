@@ -923,9 +923,6 @@ hats.T.AccessoryWeld.Part1 = bot['Torso']
 
 hats.T.AccessoryWeld.C1 = CFrame.new(0,0,0)*CFrame.Angles(math.rad(90),math.rad(0),math.rad(0))
 
-
-
-
 for i,v in pairs(bot:GetDescendants()) do
 if v:IsA('BasePart') or v:IsA('Decal') then
 v.Transparency = 1
@@ -967,6 +964,7 @@ end
 
 
 rmesh('SeeMonkey')
+
 
 --char.HumanoidRootPart:Destroy()
 pos(char.HumanoidRootPart,bot['Torso'])
@@ -1054,6 +1052,8 @@ for i,v in next, bot.Humanoid:GetPlayingAnimationTracks() do
 v:Stop()
 bot.Animate:Remove()
 end
+
+
 
 
 		local fling = true
