@@ -507,7 +507,7 @@ bot.Animate:Remove()
 end
 
 
-	
+	end
 	
 
 	if TextBox.Text == "FreeBot" then
