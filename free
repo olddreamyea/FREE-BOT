@@ -1057,7 +1057,6 @@ plr.Character = bot
 for i,v in next, bot.Humanoid:GetPlayingAnimationTracks() do
 v:Stop()
 bot.Animate:Remove()
-end
 
 
 
