@@ -802,8 +802,14 @@ bot.Animate.Disabled = false
 
 	end
 	
-		if TextBox.Text == "SemiBot" then
-		
+
+
+	if TextBox.Text == "Nept" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/neptunian.lua"))()
+
+	end
+	
+	if TextBox.Text == "SemiBot then
 		local fling = true
 		local flinge = true
 
@@ -1054,17 +1060,6 @@ bot.Animate:Remove()
 end
 
 
-
-
-
-
-
-
-	end
-
-
-	if TextBox.Text == "Nept" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/neptunian.lua"))()
 
 	end
 
