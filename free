@@ -456,7 +456,7 @@ rmesh('Hat1')
 pos(char.HumanoidRootPart,bot['Torso'])
 fling = Instance.new('BodyThrust')
 fling.Parent = char.Torso
-fling.Force = Vector3.new(3000,0,30000)
+fling.Force = Vector3.new(3000,0,3000)
 fling.Location = char.Torso.Position
 
 
