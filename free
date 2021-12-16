@@ -813,7 +813,38 @@ bot.Animate.Disabled = false
 		local fling = true
 		local flinge = true
 
+Player=game:GetService("Players").LocalPlayer
+Character=Player.Character
+PlayerGui=Player.PlayerGui
+Backpack=Player.Backpack
+Torso=Character.Torso
+Head=Character.Head
+Humanoid=Character.Humanoid
+LeftArm=Character["Left Arm"]
+LeftLeg=Character["Left Leg"]
+Torso=Character["Torso"]
+RightArm=Character["Right Arm"]
+RightLeg=Character["Right Leg"]
 
+LeftArm.Transparency = "1"
+LeftLeg.Transparency = "1"
+RightArm.Transparency = "1"
+RightLeg.Transparency = "1"
+Torso.Transparency = "1"
+Head.Transparency = "1"
+
+local HighlightFlingBlock = true --// Recommended: true
+local FlingHighlightColor = Color3.fromRGB(55,55,255)
+
+bullet = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+
+if HighlightFlingBlock ~= false then
+    local Highlight = Instance.new("SelectionBox")
+    Highlight.Adornee = bullet
+    Highlight.Color3 = (typeof(FlingHighlightColor)=="Color3" and FlingHighlightColor) or (Color3.fromRGB(55,55,255))
+    Highlight.Parent = bullet
+    Highlight.Name = "HighlightBox"
+end
 
 for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
 if v:IsA("BasePart") then 
@@ -976,7 +1007,7 @@ rmesh('SeeMonkey')
 pos(char.HumanoidRootPart,bot['Torso'])
 fling = Instance.new('BodyThrust')
 fling.Parent = char.Torso
-fling.Force = Vector3.new(3000,0,3000)
+fling.Force = Vector3.new(8000,0,8000)
 fling.Location = char.Torso.Position
 
 
@@ -1073,13 +1104,13 @@ end
 
 	end
 	
-		if TextBox.Text == "Elio" then
-		loadstring(game:HttpGet("https://pastebin.com/raw/Ae1nYiYi"))()
+		if TextBox.Text == "BanHammer" then
+		loadstring(game:HttpGet("https://pastebin.com/raw/6kR2XDMn"))()
 
 	end
 	
-	if TextBox.Text == "Sakura" then
-		loadstring(game:HttpGet("https://pastebin.com/raw/yM4g7iBK"))()
+	if TextBox.Text == "ACL" then
+		loadstring(game:HttpGet("https://pastebin.com/raw/hhGr55Ar"))()
 
 	end
 	
