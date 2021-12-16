@@ -1099,7 +1099,7 @@ end
 
 	end
 
-	if TextBox.Text == "DualSword" then
+	if TextBox.Text == "Scp" then
 		loadstring(game:HttpGet("https://pastebin.com/raw/EsC5mLGG"))()
 
 	end
@@ -1109,7 +1109,7 @@ end
 
 	end
 	
-	if TextBox.Text == "ACL" then
+	if TextBox.Text == "ACULIUS" then
 		loadstring(game:HttpGet("https://pastebin.com/raw/hhGr55Ar"))()
 
 	end
