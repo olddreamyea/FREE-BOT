@@ -1003,11 +1003,10 @@ end
 rmesh('SeeMonkey')
 
 
---char.HumanoidRootPart:Destroy()
 pos(char.HumanoidRootPart,bot['Torso'])
 fling = Instance.new('BodyThrust')
 fling.Parent = char.Torso
-fling.Force = Vector3.new(2000,0,2000)
+fling.Force = Vector3.new(0,0,0)
 fling.Location = char.Torso.Position
 
 
